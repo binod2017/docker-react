@@ -1,9 +1,9 @@
 sudo: required
-services: 
+services:
   - docker
 
 before_install:
   - docker build -t binodkumar/docker-react -f Dockerfile.dev .
 
-script:
-  - docker run binodkumar/docker-react npm run test -- --coverage
+# script:
+#   - docker run binodkumar/docker-react npm run test -- --coverage
